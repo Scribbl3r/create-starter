@@ -109,7 +109,7 @@ project-root/
 └─ create-starter.js
 
 
-Auteur : Luna
+Auteur : Scribbler
 
 prochaines étapes :
     - + publication sur npm
