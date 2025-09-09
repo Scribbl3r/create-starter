@@ -1,5 +1,3 @@
-Here’s your README translated into clear, professional English, keeping all the details and formatting intact:
-
 Create Starter Project
 
 This script generates a full-stack project ready to use, with a standardized front-end and back-end structure.
