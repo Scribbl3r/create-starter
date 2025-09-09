@@ -1,0 +1,116 @@
+# Create Starter Project
+
+Ce script permet de générer un projet **full-stack** prêt à l’emploi avec une structure front-end et back-end standardisée.
+
+---
+
+## ⚡ Features
+
+### Front-end
+- Framework : **Vite + React**
+- CSS : **TailwindCSS**
+- Gestion des formulaires : **Formik & Yup**
+- Store : **Zustand**
+- Fake data : **@faker-js/faker**
+- HTTP : **Axios**
+- Tests e2e : **Cypress**
+- Structure de dossier :
+    src/
+    components/
+    layout/
+    context/
+    hooks/
+    store/
+    pages/
+    api/
+    types/
+    utils/
+### Back-end
+- Framework : **NestJS**
+- Auth : **JWT**
+- Hash : **argon2**
+- Logger : **nestjs-pino**
+- ORM : **Prisma**
+- Tests : **Jest**
+- Env variables : **dotenv**
+- Structure de dossier :
+    src/
+    common/
+    config/
+    modules/
+    shared/
+    utils/
+    assets/
+    users/
+    test/
+    database/
+    auth/
+    
+---
+
+## 📦 Installation
+
+1. Cloner le repo :
+```bash
+git clone https://github.com/<votre-utilisateur>/<repo>.git
+cd <repo>
+
+2.Installer les dépendances du script (pas le projet généré) :
+npm install
+
+3.Lancer le script :
+node create-starter.js
+
+
+## 📝 Utilisation
+
+1. Le script demande si vous voulez créer :
+    - un projet complet (front + back)
+    - juste le front
+    - juste le back
+    - ou une structure "squelette"
+
+2. Si vous n’êtes pas dans le dossier racine du projet, le script vous demandera un nom de dossier et le créera.
+
+3. Le script installe automatiquement toutes les dépendances nécessaires et crée la structure de dossier standardisée.
+
+
+## 💻 Commandes du script
+
+    npmOnlyInstall : installe les dépendances front-end (formik, yup, axios, etc.)
+    npmOnlyBackInstall : installe les dépendances back-end (argon2, prisma, jest, etc.)
+    frontendFramework : crée le projet Vite + React
+    backendFramework : crée le projet NestJS
+    tailwindInstal : configure TailwindCSS
+    pinoInstall / jwtServiceInstall / dotenvInstal / prismaInstall : configurent le back-end
+
+## ⚠️ Notes
+
+    - Sur Windows, utilisez toujours node create-starter.js. Le script ne dépend pas du shebang pour fonctionner.
+    - Le script suppose que Node.js >= 18 est installé.
+    - Prisma et NestJS CLI doivent être accessibles globalement si vous utilisez certaines options avancées.
+
+## Structure finale du projet (complet)
+project-root/
+├─ frontend/
+│  ├─ src/
+│  │  ├─ components/
+│  │  ├─ layout/
+│  │  ├─ context/
+│  │  └─ ... etc
+├─ backend/
+│  ├─ src/
+│  │  ├─ common/
+│  │  ├─ config/
+│  │  ├─ modules/
+│  │  └─ ... etc
+├─ .gitignore
+├─ package.json
+└─ create-starter.js
+
+
+Auteur : Luna
+
+prochaines étapes :
+    - + publication sur npm
+    - ++ utilisation de différent pkgManager
